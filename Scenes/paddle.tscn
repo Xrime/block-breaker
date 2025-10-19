@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dh72b1a1dkryy"]
+
+[ext_resource type="Script" uid="uid://bx3t8pbyqu7kj" path="res://Scenes/paddle.gd" id="1_krcey"]
+[ext_resource type="Texture2D" uid="uid://cmi84a3jirn5u" path="res://Assets/kenney_block-pack/PNG/Default (64px)/tileBuilding_roofBlueSide.png" id="2_fe6ia"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5c43x"]
+size = Vector2(139, 57)
+
+[node name="paddle" type="Area2D"]
+script = ExtResource("1_krcey")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.5, 18.5)
+shape = SubResource("RectangleShape2D_5c43x")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2, 0)
+scale = Vector2(2.26563, 1)
+texture = ExtResource("2_fe6ia")

@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://bwga4w150hap3"]
+
+[node name="Game Over" type="Node2D"]

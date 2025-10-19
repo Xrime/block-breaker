@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpifsisa7e7u1"]
+
+[ext_resource type="Texture2D" uid="uid://cem687kdx7qji" path="res://Assets/break assets/break assets/Misc/bg.png" id="1_vk57k"]
+[ext_resource type="PackedScene" uid="uid://dh72b1a1dkryy" path="res://Scenes/paddle.tscn" id="2_8ffim"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="bg" type="Sprite2D" parent="."]
+position = Vector2(587, 320)
+scale = Vector2(3, 3)
+texture = ExtResource("1_vk57k")
+
+[node name="paddle" parent="." instance=ExtResource("2_8ffim")]
+position = Vector2(150, 480)
