@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://cqwq625yjes00"]
+
+[ext_resource type="Script" uid="uid://5ufxr66lacps" path="res://brick.gd" id="1_hqb1c"]
+[ext_resource type="Texture2D" uid="uid://bfvqe4mvmmnjp" path="res://Assets/Brick Breaker Art Assets/Art Assets/Bricks Full.png" id="2_f8nvr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k76ut"]
+
+[node name="brick" type="Area2D"]
+script = ExtResource("1_hqb1c")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_f8nvr")
+hframes = 2
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_k76ut")
