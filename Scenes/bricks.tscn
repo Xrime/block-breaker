@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0cj4yldg8q0e"]
+
+[ext_resource type="Script" uid="uid://c6fgvju1abf1x" path="res://bricks.gd" id="1_yfbfv"]
+[ext_resource type="PackedScene" uid="uid://cqwq625yjes00" path="res://Scenes/brick.tscn" id="2_n2jnc"]
+
+[node name="bricks" type="Node2D"]
+script = ExtResource("1_yfbfv")
+brick_scene = ExtResource("2_n2jnc")
