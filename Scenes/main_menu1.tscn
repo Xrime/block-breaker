@@ -1,0 +1,108 @@
+[gd_scene load_steps=3 format=3 uid="uid://btsmskroceg1o"]
+
+[ext_resource type="Script" uid="uid://do3p5smommlrc" path="res://main_menu.gd" id="1_oqc8x"]
+[ext_resource type="FontFile" uid="uid://c33fng0ol30pc" path="res://Assets/kenney_kenney-fonts/Fonts/Kenney Blocks.ttf" id="2_x85hd"]
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource("1_oqc8x")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1154.0
+offset_bottom = 653.0
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.970521, 0.379179, 1, 0.392157)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 655.0
+scale = Vector2(0.999214, 0.994206)
+alignment = 1
+
+[node name="Label" type="Label" parent="Control/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_x85hd")
+theme_override_font_sizes/font_size = 50
+text = "Welcome To Xbreaker"
+
+[node name="Button" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_x85hd")
+theme_override_font_sizes/font_size = 30
+text = "Start"
+
+[node name="Button2" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_x85hd")
+theme_override_font_sizes/font_size = 30
+text = "Start"
+
+[node name="Button3" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_x85hd")
+theme_override_font_sizes/font_size = 30
+text = "Start"
+
+[node name="Button4" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_x85hd")
+theme_override_font_sizes/font_size = 30
+text = "Start"
+
+[node name="Button5" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_x85hd")
+theme_override_font_sizes/font_size = 30
+text = "Start"
+
+[node name="Button6" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_x85hd")
+theme_override_font_sizes/font_size = 30
+text = "Start"
+
+[node name="Button7" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_x85hd")
+theme_override_font_sizes/font_size = 30
+text = "Level 8
+"
+
+[node name="Button8" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_x85hd")
+theme_override_font_sizes/font_size = 30
+
+[node name="Button9" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_x85hd")
+theme_override_font_sizes/font_size = 30
+text = "level 9
+"
+
+[node name="Button10" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_x85hd")
+theme_override_font_sizes/font_size = 30
+text = "Level 10"
+
+[connection signal="pressed" from="Control/VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/Button2" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/Button3" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/Button4" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/Button5" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/Button6" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/Button7" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/Button8" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/Button9" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/Button10" to="." method="_on_button_pressed"]

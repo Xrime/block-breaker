@@ -4,14 +4,16 @@
 [ext_resource type="Texture2D" uid="uid://bfvqe4mvmmnjp" path="res://Assets/Brick Breaker Art Assets/Art Assets/Bricks Full.png" id="2_f8nvr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k76ut"]
+size = Vector2(26, 12)
 
 [node name="brick" type="Area2D"]
 script = ExtResource("1_hqb1c")
 
-[node name="Sprite2D" type="Sprite2D" parent="." groups=["brick"]]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, 1)
+shape = SubResource("RectangleShape2D_k76ut")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D" groups=["brick"]]
 texture = ExtResource("2_f8nvr")
 hframes = 2
-vframes = 4
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_k76ut")
+vframes = 5

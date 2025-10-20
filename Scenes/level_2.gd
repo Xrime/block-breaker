@@ -12,5 +12,5 @@ func _ready() -> void:
 		for colunn in range(columns) :
 			var brick = brick_scene.instantiate()
 			brick.position=start_position+Vector2(colunn* spacing_x, row *spacing_y)
-			brick.Level=1
+			brick.Level=2
 			add_child(brick)
