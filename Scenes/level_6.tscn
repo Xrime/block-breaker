@@ -1,0 +1,32 @@
+[gd_scene load_steps=8 format=3 uid="uid://d1wewu048gpyp"]
+
+[ext_resource type="Script" uid="uid://cl0c7trgf7cqi" path="res://Scenes/level_1.gd" id="1_helb0"]
+[ext_resource type="PackedScene" uid="uid://cqwq625yjes00" path="res://Scenes/brick.tscn" id="2_rkygx"]
+[ext_resource type="PackedScene" uid="uid://cpt7xf0jl3l7o" path="res://Scenes/level_7.tscn" id="3_b33os"]
+[ext_resource type="PackedScene" uid="uid://dh72b1a1dkryy" path="res://Scenes/paddle.tscn" id="3_rkygx"]
+[ext_resource type="Texture2D" uid="uid://dfs85nktbi2ww" path="res://Assets/Brick Breaker Art Assets/Art Assets/Background 1.png" id="4_546p8"]
+[ext_resource type="PackedScene" uid="uid://dalfsmw37p4eh" path="res://Scenes/wall.tscn" id="4_b33os"]
+[ext_resource type="PackedScene" uid="uid://wspbxb5rm4vq" path="res://Scenes/ball.tscn" id="5_546p8"]
+
+[node name="Level6" type="Node2D"]
+script = ExtResource("1_helb0")
+brick_scene = ExtResource("2_rkygx")
+rows = 4
+columns = 17
+spacing_x = 40
+start_position = Vector2(60, 100)
+next_level = ExtResource("3_b33os")
+Level = 6
+
+[node name="bg" type="Sprite2D" parent="."]
+position = Vector2(591.5, 332)
+scale = Vector2(6.08854, 3.53125)
+texture = ExtResource("4_546p8")
+
+[node name="paddle" parent="." instance=ExtResource("3_rkygx")]
+position = Vector2(550, 597)
+
+[node name="Wall" parent="." instance=ExtResource("4_b33os")]
+
+[node name="Ball" parent="." instance=ExtResource("5_546p8")]
+scale = Vector2(2, 2)

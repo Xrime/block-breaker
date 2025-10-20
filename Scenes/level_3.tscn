@@ -1,18 +1,25 @@
-[gd_scene load_steps=6 format=3 uid="uid://dkmmm47epjqgq"]
+[gd_scene load_steps=8 format=3 uid="uid://dkmmm47epjqgq"]
 
-[ext_resource type="Script" uid="uid://biiwmvxi40ush" path="res://Scenes/level_2.gd" id="1_vwg62"]
-[ext_resource type="Texture2D" uid="uid://ddu853tlgl01k" path="res://Assets/Brick Breaker Art Assets/Art Assets/Test BG/Background 2.png" id="2_qf6rc"]
+[ext_resource type="Script" uid="uid://cl0c7trgf7cqi" path="res://Scenes/level_1.gd" id="1_vwg62"]
+[ext_resource type="PackedScene" uid="uid://cqwq625yjes00" path="res://Scenes/brick.tscn" id="2_53xsp"]
+[ext_resource type="PackedScene" uid="uid://d4ilbk6dn0nj8" path="res://Scenes/level_4.tscn" id="3_5e78q"]
 [ext_resource type="PackedScene" uid="uid://dh72b1a1dkryy" path="res://Scenes/paddle.tscn" id="3_53xsp"]
 [ext_resource type="PackedScene" uid="uid://dalfsmw37p4eh" path="res://Scenes/wall.tscn" id="4_5e78q"]
+[ext_resource type="Texture2D" uid="uid://cbi3immh5arb" path="res://Assets/Brick Breaker Art Assets/Art Assets/Test BG/Background 3.png" id="4_l4wr6"]
 [ext_resource type="PackedScene" uid="uid://wspbxb5rm4vq" path="res://Scenes/ball.tscn" id="5_l4wr6"]
 
 [node name="Level3" type="Node2D"]
 script = ExtResource("1_vwg62")
+brick_scene = ExtResource("2_53xsp")
+rows = 5
+columns = 12
+next_level = ExtResource("3_5e78q")
+Level = 3
 
 [node name="bg" type="Sprite2D" parent="."]
 position = Vector2(591.5, 332)
 scale = Vector2(6.08854, 3.53125)
-texture = ExtResource("2_qf6rc")
+texture = ExtResource("4_l4wr6")
 
 [node name="paddle" parent="." instance=ExtResource("3_53xsp")]
 position = Vector2(550, 597)
@@ -20,3 +27,4 @@ position = Vector2(550, 597)
 [node name="Wall" parent="." instance=ExtResource("4_5e78q")]
 
 [node name="Ball" parent="." instance=ExtResource("5_l4wr6")]
+scale = Vector2(2, 2)

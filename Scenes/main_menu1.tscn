@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://btsmskroceg1o"]
 
-[ext_resource type="Script" uid="uid://do3p5smommlrc" path="res://main_menu.gd" id="1_oqc8x"]
+[ext_resource type="Script" uid="uid://bteewk2fukgk4" path="res://Scenes/main_menu_1.gd" id="1_oqc8x"]
 [ext_resource type="FontFile" uid="uid://c33fng0ol30pc" path="res://Assets/kenney_kenney-fonts/Fonts/Kenney Blocks.ttf" id="2_x85hd"]
 
-[node name="MainMenu" type="Node2D"]
+[node name="MainMenu1" type="Node2D"]
 script = ExtResource("1_oqc8x")
 
 [node name="Control" type="Control" parent="."]
@@ -39,49 +39,55 @@ text = "Welcome To Xbreaker"
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_x85hd")
 theme_override_font_sizes/font_size = 30
-text = "Start"
+text = "level  1"
 
 [node name="Button2" type="Button" parent="Control/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_x85hd")
 theme_override_font_sizes/font_size = 30
-text = "Start"
+text = "level 2
+"
 
 [node name="Button3" type="Button" parent="Control/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_x85hd")
 theme_override_font_sizes/font_size = 30
-text = "Start"
+text = "level 3
+"
 
 [node name="Button4" type="Button" parent="Control/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_x85hd")
 theme_override_font_sizes/font_size = 30
-text = "Start"
+text = "level 4
+"
 
 [node name="Button5" type="Button" parent="Control/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_x85hd")
 theme_override_font_sizes/font_size = 30
-text = "Start"
+text = "Level  5
+"
 
 [node name="Button6" type="Button" parent="Control/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_x85hd")
 theme_override_font_sizes/font_size = 30
-text = "Start"
+text = "Level 6
+"
 
 [node name="Button7" type="Button" parent="Control/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_x85hd")
 theme_override_font_sizes/font_size = 30
-text = "Level 8
+text = "Level 7
 "
 
 [node name="Button8" type="Button" parent="Control/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_x85hd")
 theme_override_font_sizes/font_size = 30
+text = "level 8"
 
 [node name="Button9" type="Button" parent="Control/VBoxContainer"]
 layout_mode = 2
@@ -97,12 +103,12 @@ theme_override_font_sizes/font_size = 30
 text = "Level 10"
 
 [connection signal="pressed" from="Control/VBoxContainer/Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Control/VBoxContainer/Button2" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Control/VBoxContainer/Button3" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Control/VBoxContainer/Button4" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Control/VBoxContainer/Button5" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Control/VBoxContainer/Button6" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Control/VBoxContainer/Button7" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Control/VBoxContainer/Button8" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Control/VBoxContainer/Button9" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Control/VBoxContainer/Button10" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/Button5" to="." method="_on_button_5_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/Button6" to="." method="_on_button_6_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/Button7" to="." method="_on_button_7_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/Button8" to="." method="_on_button_8_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/Button9" to="." method="_on_button_9_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/Button10" to="." method="_on_button_10_pressed"]

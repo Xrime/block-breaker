@@ -1,0 +1,32 @@
+[gd_scene load_steps=8 format=3 uid="uid://de52r623dwnk1"]
+
+[ext_resource type="Script" uid="uid://cl0c7trgf7cqi" path="res://Scenes/level_1.gd" id="1_u4qav"]
+[ext_resource type="PackedScene" uid="uid://cqwq625yjes00" path="res://Scenes/brick.tscn" id="2_vaeam"]
+[ext_resource type="PackedScene" uid="uid://k46uemwxffk6" path="res://Scenes/level_9.tscn" id="3_a0bmv"]
+[ext_resource type="PackedScene" uid="uid://dh72b1a1dkryy" path="res://Scenes/paddle.tscn" id="3_vaeam"]
+[ext_resource type="PackedScene" uid="uid://dalfsmw37p4eh" path="res://Scenes/wall.tscn" id="4_a0bmv"]
+[ext_resource type="Texture2D" uid="uid://bgpsl4peh15gw" path="res://Assets/kenney_background-elements-redux/Backgrounds/backgroundColorGrass.png" id="4_ry3a7"]
+[ext_resource type="PackedScene" uid="uid://wspbxb5rm4vq" path="res://Scenes/ball.tscn" id="5_ry3a7"]
+
+[node name="Level8" type="Node2D"]
+script = ExtResource("1_u4qav")
+brick_scene = ExtResource("2_vaeam")
+rows = 10
+columns = 20
+spacing_x = 30
+spacing_y = 30
+start_position = Vector2(50, 100)
+next_level = ExtResource("3_a0bmv")
+
+[node name="bg" type="Sprite2D" parent="."]
+position = Vector2(583.5, 332)
+scale = Vector2(1.14746, 0.619141)
+texture = ExtResource("4_ry3a7")
+
+[node name="paddle" parent="." instance=ExtResource("3_vaeam")]
+position = Vector2(550, 597)
+
+[node name="Wall" parent="." instance=ExtResource("4_a0bmv")]
+
+[node name="Ball" parent="." instance=ExtResource("5_ry3a7")]
+scale = Vector2(2, 2)

@@ -1,0 +1,33 @@
+[gd_scene load_steps=8 format=3 uid="uid://cpt7xf0jl3l7o"]
+
+[ext_resource type="Script" uid="uid://cl0c7trgf7cqi" path="res://Scenes/level_1.gd" id="1_hewxp"]
+[ext_resource type="PackedScene" uid="uid://cqwq625yjes00" path="res://Scenes/brick.tscn" id="2_7e1oo"]
+[ext_resource type="PackedScene" uid="uid://dh72b1a1dkryy" path="res://Scenes/paddle.tscn" id="3_7e1oo"]
+[ext_resource type="PackedScene" uid="uid://de52r623dwnk1" path="res://Scenes/level_8.tscn" id="3_vpjpy"]
+[ext_resource type="Texture2D" uid="uid://b3nph2red7yla" path="res://Assets/kenney_background-elements-redux/Backgrounds/backgroundColorFall.png" id="4_38lld"]
+[ext_resource type="PackedScene" uid="uid://dalfsmw37p4eh" path="res://Scenes/wall.tscn" id="4_vpjpy"]
+[ext_resource type="PackedScene" uid="uid://wspbxb5rm4vq" path="res://Scenes/ball.tscn" id="5_38lld"]
+
+[node name="Level7" type="Node2D"]
+scale = Vector2(2, 2)
+script = ExtResource("1_hewxp")
+brick_scene = ExtResource("2_7e1oo")
+rows = 8
+columns = 19
+spacing_x = 30
+start_position = Vector2(60, 80)
+next_level = ExtResource("3_vpjpy")
+Level = 7
+
+[node name="bg" type="Sprite2D" parent="."]
+position = Vector2(611.5, 317)
+scale = Vector2(1.16113, 0.716797)
+texture = ExtResource("4_38lld")
+
+[node name="paddle" parent="." instance=ExtResource("3_7e1oo")]
+position = Vector2(550, 597)
+
+[node name="Wall" parent="." instance=ExtResource("4_vpjpy")]
+
+[node name="Ball" parent="." instance=ExtResource("5_38lld")]
+scale = Vector2(2, 2)
