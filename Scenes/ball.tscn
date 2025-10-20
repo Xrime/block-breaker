@@ -9,12 +9,11 @@ radius = 6.7082
 [node name="Ball" type="Area2D"]
 script = ExtResource("1_ij5cq")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(39, 15)
-texture = ExtResource("2_ij5cq")
-hframes = 4
-vframes = 4
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(39, 15)
 shape = SubResource("CircleShape2D_gejbx")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
+texture = ExtResource("2_ij5cq")
+hframes = 4
+vframes = 4
